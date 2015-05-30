@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sinatra OAuth 2.0</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="row" style="margin-top:40px;">
+    	<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+			<h2 style="text-align:center;">Your authorization grant is</h2>
+			<h2 style="text-align:center;"><b><font face="monospace"><%= @random_string %></font></b></h2>
+		</div>
+    	<div class="col-lg-4"></div>
+   	</div>
+
+    <div class="row" style="margin-top:20px;">
+    	<div class="col-lg-2"></div>
+    	<div class="col-lg-8">
+			<div class="panel panel-primary">
+			  <div class="panel-heading">
+			  	<h2>Request for an <font face="monospace">access_token</font></h2>
+			  </div>
+			  <div class="panel-body">
+			    <p>1. The authorization grant will be valid till you request for another authorization grant. If you've successfully received a new grant, the old grant will become invalid.</p>
+			    <p>2. To request an access_token, make a <b>POST</b> HTTP request to the token endpoint, 'localhost:4567/access_token' by adding the following parameters using the "application/x-www-form-urlencoded" format with a character encoding of UTF-8 in the HTTP request entity-body:</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;- <b>grant_type</b> REQUIRED. Value MUST be set to 'credentials'</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;- <b>client_email</b> REQUIRED. Example value: 'client@root.com'</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;- <b>authorization_grant</b> REQUIRED. Example value: 'a70bc158dd5151c3dd92dc2e13c1b3ba'</p>
+				<p>3. If successful, you will be returned with a <b>200 OK</b> HTTP response with an additonal parameter that contains the access_token. A sample request and response is shown below.</p>
+				<pre><p><b>HTTP Request</b><br>
+					POST /token HTTP/1.1<br>
+					Host: localhost:4567/access_token<br>
+					client_email: client@root.com<br>
+					Content-Type: application/x-www-form-urlencoded<br>
+					authorization_grant:a70bc158dd5151c3dd92dc2e13c1b3ba<br>
+				</p></pre>
+				<pre><p><b>HTTP Response</b><br>
+					POST /token HTTP/1.1<br>
+					Host: localhost:4567/access_token<br>
+					client_email: client@root.com<br>
+					Content-Type: application/x-www-form-urlencoded<br>
+					authorization_grant:a70bc158dd5151c3dd92dc2e13c1b3ba<br>
+					access_token:dg2gd28t2649d29486rtd9234rtd32
+				</p></pre>
+			  </div>
+			  <div class="panel-footer"></div>
+			</div>
+		</div>
+		<div class="col-lg-2"></div>
+   	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

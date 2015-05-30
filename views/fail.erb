@@ -9,10 +9,12 @@
   </head>
   <body>
 
-    <div class="row" style="margin-top:25px;">
-		<h1 style="text-align:center; margin-top:20px;">Hello <b><%= @name %></b>! Welcome to Sinatra's world!</h1>
+    <div class="row" style="margin-top:45px;">
+		<h1 style="text-align:center; margin-top:20px; margin-bottom:25px;"><%= @result %></h1>
     	<div class="col-lg-4"></div>
-    	<div class="col-lg-4"></div>
+    	<div class="col-lg-4">
+        <a href="/"><button style="width:100%;" class="btn btn-lg btn-primary">Try again</button></a>
+      </div>
     	<div class="col-lg-4"></div>
    	</div>
 

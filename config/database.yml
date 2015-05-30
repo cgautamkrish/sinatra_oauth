@@ -1,0 +1,6 @@
+# config/database.yml
+database: sinatra_oauth
+username:  root
+password: 
+host: localhost
+port: 80
