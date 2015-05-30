@@ -1,6 +1,6 @@
 ---
 users:
-  gautamck@hotmail.com: ''
-  gautam@ninjavan.sg: password
-  cgautamk@gmail.com: password
-  gautam@gmail.com: pass
+  user@hotmail.com: ''
+  root@root.sg: password
+  root@gmail.com: password
+  user@gmail.com: pass
