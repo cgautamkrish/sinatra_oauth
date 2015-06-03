@@ -3,9 +3,9 @@ OAuth 2.0 implementation in Sinatra</br>
 Instead of connecting to a DB (too lazy to go setup tables/columns/connectors :P), I'll be using YAML for storing data. Of course, in a true blue OAuth implementation, storing in a DB is vital.
 
 <h3>Pre-requisites</h3>
-Sinatra framework - http://www.sinatrarb.com/
-SecureRandom gem - http://ruby-doc.org/stdlib-1.9.2/libdoc/securerandom/rdoc/SecureRandom.html
-ERB for layouts/templating
+Sinatra framework - http://www.sinatrarb.com/ </br>
+SecureRandom gem - http://ruby-doc.org/stdlib-1.9.2/libdoc/securerandom/rdoc/SecureRandom.html </br>
+ERB for layouts/templating </br>
 
 Only SecureRandom gem has to be installed separately. 
 
