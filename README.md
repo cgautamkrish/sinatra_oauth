@@ -18,12 +18,12 @@ Only SecureRandom gem has to be installed separately.
 
 <h3>Requesting for access token</h3>
 
-			    <p>1. The authorization grant will be valid till you request for another authorization grant. If you've successfully received a new grant, the old grant will become invalid.</p>
-			    <p>2. To request an access_token, make a <b>POST</b> HTTP request to the token endpoint, 'localhost:4567/access_token' by adding the following parameters using the "application/x-www-form-urlencoded" format with a character encoding of UTF-8 in the HTTP request entity-body:</p>
+1. The authorization grant will be valid till you request for another authorization grant. If you've successfully received a new grant, the old grant will become invalid.</br>
+2. To request an access_token, make a <b>POST</b> HTTP request to the token endpoint, 'localhost:4567/access_token' by adding the following parameters using the "application/x-www-form-urlencoded" format with a character encoding of UTF-8 in the HTTP request entity-body:</br>
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;- <b>grant_type</b> REQUIRED. Value MUST be set to 'credentials'</p>
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;- <b>client_email</b> REQUIRED. Example value: 'client@root.com'</p>
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;- <b>authorization_grant</b> REQUIRED. Example value: 'a70bc158dd5151c3dd92dc2e13c1b3ba'</p>
-				<p>3. If successful, you will be returned with a <b>200 OK</b> HTTP response with an additonal parameter that contains the access_token. A sample request and response is shown below.</p>
+3. If successful, you will be returned with a <b>200 OK</b> HTTP response with an additonal parameter that contains the access_token. A sample request and response is shown below.</br>
 				<pre><p><b>HTTP Request</b><br>
 					POST /token HTTP/1.1<br>
 					Host: localhost:4567/access_token<br>
