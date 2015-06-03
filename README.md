@@ -1,5 +1,5 @@
 # sinatra_oauth
-OAuth 2.0 implementation in Sinatra
+OAuth 2.0 implementation in Sinatra</br>
 Instead of connecting to a DB (too lazy to go setup tables/columns/connectors :P), I'll be using YAML for storing data. Of course, in a true blue OAuth implementation, storing in a DB is vital.
 
 <h3>Pre-requisites</h3>
